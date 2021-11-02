@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztrációs form karakterszámlálóval</title>
+    <script src="main.js"></script>
+    
+</head>
+<body>
+    <form onsubmit="return false">
+        <div>
+            Felhasználónév: <input type="text" id="fNev"><span id="karakterszamlaloNev"> 15 / 20</span>
+        </div>
+        <div>
+            Jelszó: <input type="password" id="jelszo"><span id="karakterSzamJelszo"> 5 / 8</span>
+        </div>
+        <div>
+            Jelszó ismét: <input type="password" id="jelszoIsmet"><span id="hibauzenet"></span>
+        </div>
+        <div>
+            <input type="submit" value="Regisztrál" id="regisztracio">
+        </div>
+
+    </form>
+    <p id="siker"></p>
+</body>
+</html>
